@@ -20,6 +20,7 @@ public class MyStepConfig {
 
     @Bean
     public Step myStep(JobRepository jobRepository, Tasklet myTasklet, PlatformTransactionManager transactionManager) {
+        System.out.println("myStep");
         return new StepBuilder("myStep", jobRepository)
                 .tasklet(myTasklet, transactionManager) // or .chunk(chunkSize, transactionManager)
                 .build();

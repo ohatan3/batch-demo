@@ -25,6 +25,6 @@ public class MyLauncher {
 //        this.jobParameters = myJob.getJobParametersIncrementer()
 //                .getNext(this.jobParameters);
 //        this.jobLauncher.run(this.myJob, this.jobParameters);
-        System.out.println("myJob");
+        System.out.println("launch");
     }
 }
